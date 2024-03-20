@@ -1,0 +1,32 @@
+*{
+    background-color:white;
+}
+
+.circle {
+    border-radius: 50%; /* 这将确保形状是圆的 */
+    position: absolute;
+    animation: moveCircle linear infinite alternate;
+}
+
+
+.circle-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.eraser-circle {
+    position: absolute;
+    border-radius: 50%; /* 使 DIV 变为圆形 */
+    background-color: white; /* 设置圆形为白色 */
+}
+
+@keyframes moveCircle {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(20px, 20px);
+    }
+}
